@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Select } from './Select';
 import { useState } from 'react';
 
@@ -17,13 +16,13 @@ const SelectWithState = () => {
 		{ title: '3 опция', value: '3 опция', className: '' },
 		{ title: '4 опция', value: '4 опция', className: '' },
 	];
-	const [selected, setSelected] = useState(options[0]);
+	const [value, setValue] = useState(options[0]);
 
 	return (
 		<>
 			<Select
-				selected={selected}
-				onChange={setSelected}
+				value={value}
+				onChange={setValue}
 				options={options}
 				title='Название выпадающего списка'
 			/>

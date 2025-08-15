@@ -34,7 +34,7 @@ export const ArticleParamsForm = ({
 }: ArticleParamsFormProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [formState, setFormState] = useState<ArticleStateType>(value);
-	const formRef = useRef<HTMLElement>(null);
+	const formRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		setFormState(value);
